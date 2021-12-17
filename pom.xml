@@ -12,7 +12,7 @@
     <name>veasion-db-mybatis</name>
     <url>https://github.com/veasion/veasion-db-mybatis</url>
     <description>
-        veasion-db spring-mybatis adapter.
+        veasion-db-mybatis, this extension jar that supports veasion-db (an ORM framework based on Java JDBC) to spring-mybatis (spring、mybatis).
     </description>
 
     <inceptionYear>2021</inceptionYear>

@@ -1,7 +1,7 @@
 # veasion-db-mybatis
 
-veasion-db-mybatis 是一个用来适配 spring-mybatis、veasion-db 的 jar,
-它支持 veasion-db 和 mybatis 共存的适配，使用非常简单。
+veasion-db-mybatis 是一个用来适配 spring-mybatis、veasion-db 的扩展工程,
+它支持 veasion-db 和 mybatis 在 springboot / spring 中的适配。
 ## maven 依赖
 ```xml
 <!-- veasion-db -->
@@ -23,10 +23,11 @@ veasion-db-mybatis 是一个用来适配 spring-mybatis、veasion-db 的 jar,
 ### springboot 集成
 ```
 // application 启动类上加入 @Import 注解
+
 @Import(cn.veasion.db.spring.MybatisBeanDefinitionRegistryPostProcessor.class)
 ```
 
-### spring-mybatis 集成
+### spring 集成
 ```
 // mapper扫描注解的 factoryBean 指定使用 cn.veasion.db.mybatis.MybatisMapperFactoryBean.class
 
@@ -35,7 +36,7 @@ veasion-db-mybatis 是一个用来适配 spring-mybatis、veasion-db 的 jar,
 
 ### mapper
 ```java
-// mapper 接口继承 cn.veasion.db.jdbc.EntityDao<T, ID>
+// mybatis mapper 接口继承 cn.veasion.db.jdbc.EntityDao<T, ID>
 
 public interface UserMapper extends EntityDao<UserPO, Long> {
     // 其他代码会走 mybatis...
