@@ -1,7 +1,8 @@
 # veasion-db-mybatis
 
-veasion-db-mybatis 是一个用来适配 spring-mybatis、veasion-db 的扩展工程,
-它支持 veasion-db 和 mybatis 在 springboot / spring 中的适配。
+veasion-db-mybatis 是一个用来适配 spring-mybatis、[veasion-db](https://github.com/veasion/veasion-db) 的扩展工程,
+它支持 [veasion-db](https://github.com/veasion/veasion-db) 和 mybatis 在 springboot / spring 中的适配。
+
 ## maven 依赖
 ```xml
 <!-- veasion-db -->
