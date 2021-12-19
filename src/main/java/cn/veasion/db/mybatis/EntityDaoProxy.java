@@ -23,7 +23,7 @@ public class EntityDaoProxy implements InvocationHandler {
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-        if (EntityDao.class.isAssignableFrom(method.getDeclaringClass())) {
+        if (EntityDao.class.equals(method.getDeclaringClass())) {
             return method.invoke(entityDao, args);
         } else {
             return method.invoke(object, args);

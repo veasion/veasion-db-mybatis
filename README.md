@@ -16,7 +16,7 @@ veasion-db-mybatis 是一个用来适配 spring-mybatis、[veasion-db](https://g
 <dependency>
     <groupId>cn.veasion</groupId>
     <artifactId>veasion-db-mybatis</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 </dependency>
 ```
 ## 使用方式介绍

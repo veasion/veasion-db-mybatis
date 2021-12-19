@@ -7,7 +7,7 @@
 
     <groupId>cn.veasion</groupId>
     <artifactId>veasion-db-mybatis</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 
     <name>veasion-db-mybatis</name>
     <url>https://github.com/veasion/veasion-db-mybatis</url>
