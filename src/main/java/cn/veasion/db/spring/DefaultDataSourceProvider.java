@@ -46,8 +46,8 @@ public class DefaultDataSourceProvider implements DataSourceProvider {
     }
 
     @Override
-    public boolean autoClose() {
-        return false;
+    public void releaseConnection(DataSource dataSource, Connection connection) {
+        DataSourceUtils.releaseConnection(connection, dataSource);
     }
 
 }
