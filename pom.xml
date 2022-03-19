@@ -7,7 +7,7 @@
 
     <groupId>cn.veasion</groupId>
     <artifactId>veasion-db-mybatis</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
 
     <name>veasion-db-mybatis</name>
     <url>https://github.com/veasion/veasion-db-mybatis</url>
@@ -67,7 +67,7 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <veasion-db-version>1.0.7</veasion-db-version>
+        <veasion-db-version>1.1.1</veasion-db-version>
         <mybatis.version>3.5.6</mybatis.version>
         <spring.version>5.3.1</spring.version>
         <mybatis-spring-version>2.0.6</mybatis-spring-version>

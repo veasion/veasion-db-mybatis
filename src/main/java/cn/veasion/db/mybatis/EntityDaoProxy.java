@@ -1,8 +1,10 @@
 package cn.veasion.db.mybatis;
 
+import cn.veasion.db.DbException;
 import cn.veasion.db.jdbc.EntityDao;
 
 import java.lang.reflect.InvocationHandler;
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 /**
@@ -24,7 +26,16 @@ public class EntityDaoProxy implements InvocationHandler {
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         if (EntityDao.class.equals(method.getDeclaringClass())) {
-            return method.invoke(entityDao, args);
+            try {
+                return method.invoke(entityDao, args);
+            } catch (InvocationTargetException e) {
+                Throwable targetException = e.getTargetException();
+                if (targetException instanceof DbException) {
+                    throw targetException;
+                } else {
+                    throw e;
+                }
+            }
         } else {
             return method.invoke(object, args);
         }
