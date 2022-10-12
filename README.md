@@ -9,14 +9,14 @@ veasion-db-mybatis 是一个用来适配 spring-mybatis、[veasion-db](https://g
 <dependency>
     <groupId>cn.veasion</groupId>
     <artifactId>veasion-db</artifactId>
-    <version>1.1.1</version>
+    <version>1.1.7</version>
 </dependency>
 
 <!-- veasion-db-mybatis -->
 <dependency>
     <groupId>cn.veasion</groupId>
     <artifactId>veasion-db-mybatis</artifactId>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
 </dependency>
 ```
 ## 使用方式介绍
