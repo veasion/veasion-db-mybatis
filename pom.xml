@@ -67,10 +67,10 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <veasion-db-version>1.2.3</veasion-db-version>
-        <mybatis.version>3.5.6</mybatis.version>
-        <spring.version>5.3.1</spring.version>
-        <mybatis-spring-version>2.0.6</mybatis-spring-version>
+        <veasion-db-version>1.2.7</veasion-db-version>
+        <mybatis.version>3.5.11</mybatis.version>
+        <spring.version>5.3.23</spring.version>
+        <mybatis-spring-version>2.1.0</mybatis-spring-version>
     </properties>
 
     <dependencies>
